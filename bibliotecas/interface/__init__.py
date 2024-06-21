@@ -1,10 +1,15 @@
+# função para mostrar linhas no terminal, para facilitar a leitura do usuário
 def linha(tam=42):
     return '-'*tam
+
+# função usada para exibir o cabeçalho da ação que está sendo executada.
 
 def cabecalho(txt):
     print(linha())
     print(txt)
     print(linha())
+
+# função para exibição do menu de opções
 
 def menu(a):
     lista = a

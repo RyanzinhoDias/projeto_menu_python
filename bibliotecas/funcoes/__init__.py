@@ -1,9 +1,11 @@
 from bibliotecas import interface
 from bibliotecas import arquivo
 
+
 def vercadastrados():
     interface.cabecalho('PESSOAS CADASTRADAS'.center(42))
     arquivo.ler_arquivo()
+
 
 def cadastrarnovo(arq, nome='desconhecido', idade=0):
     try:
@@ -18,11 +20,11 @@ def cadastrarnovo(arq, nome='desconhecido', idade=0):
         else:
             print(f'\033[32m {nome} foi adcionado com sucesso.\033[m')
             a.close()
-        
 
 
 def sair():
     interface.cabecalho('SAINDO DO SISTEMA...ATÉ LOGO!'.center(42))
+
 
 def leiaint(txt):
     inteiro = input(txt)
