@@ -1,10 +1,15 @@
+# importação de outros pacotes
 from bibliotecas import interface
 from bibliotecas import arquivo
+
+# função que retorna a opção 1; De ver as pessoas cadastradas
 
 
 def vercadastrados():
     interface.cabecalho('PESSOAS CADASTRADAS'.center(42))
     arquivo.ler_arquivo()
+
+# função que retorna a opção 2; De cadastrar novas pessoas
 
 
 def cadastrarnovo(arq, nome='desconhecido', idade=0):
@@ -21,9 +26,13 @@ def cadastrarnovo(arq, nome='desconhecido', idade=0):
             print(f'\033[32m {nome} foi adcionado com sucesso.\033[m')
             a.close()
 
+# função que retorna a opção 3; De finalizar o sistema.
+
 
 def sair():
     interface.cabecalho('SAINDO DO SISTEMA...ATÉ LOGO!'.center(42))
+
+# Função para receber a entrada inteira e informar caso dê algum erro do tipo digitado.
 
 
 def leiaint(txt):
