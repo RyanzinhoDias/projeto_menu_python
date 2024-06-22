@@ -18,5 +18,3 @@ def menu(a):
     for indice, item in enumerate(lista):
         print(f'\033[33m{indice+1} -\033[m \033[36m{item}\033[m')
     print(linha())
-
-    
